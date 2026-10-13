@@ -1,0 +1,242 @@
+object,parameter,offset_decimal,size_bytes,range_verbatim,description_verbatim,evidence,applicability
+program,KGRP1@,1,2,Block address,Block address of first keygroup (internal use),D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,PRNAME,3,12,String of characters,Name of program,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,PRGNUM,15,1,0 to 128,MIDI program number,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,PMCHAN,16,1,"255 signifies OMNI, 0 to 15 indicate MIDI channel",MIDI channel,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,POLYPH,17,1,0 to 31 (these represent polyphony values of 1 to 32),Depth of polyphony,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,PRIORT,18,1,"0=low, 1=norm, 2=high, 3=hold",Priority of voices playing this program,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,PLAYLO,19,1,21 to 127 represents A1 to G8,Lower limit of play range,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,PLAYHI,20,1,21 to 127 represents A1 to G8,Upper limit of play range,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,OSHIFT,21,1,0,Not used,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,STEREO,23,1,0 to 99,Left and right output levels,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,PANPOS,24,1,-50 to +50,Balance between left and right outputs,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,PRLOUD,25,1,0 to 99,Basic loudness of this program,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,V_LOUD,26,1,-50 to +50,Note-on velocity dependence of loudness,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,K_LOUD,27,1,0,Not used,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,P_LOUD,28,1,0,Not used,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,PANRAT,29,1,0 to 99,Speed of LFO2,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,PANDEP,30,1,0 to 99,Depth of LFO2,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,PANDEL,31,1,0 to 99,Delay in growth of LFO2,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,K_PANP,32,1,0,Not used,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,LFORAT,33,1,0 to 99,Speed of LFO1,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,LFODEP,34,1,0 to 99,Depth of LFO1,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,LFODEL,35,1,0 to 99,Delay in growth of LFO1,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,MWLDEP,36,1,0 to 99,Amount of control of LFO1 depth by Modwheel,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,PRSDEP,37,1,0 to 99,Amount of control of LFO1 depth by Aftertouch,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,VELDEP,38,1,0 to 99,Amount of control of LFO1 depth by Note-On velocity,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,B_PTCH,39,1,0 to 24 semitones,Range of increase of Pitch by bendwheel,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,P_PTCH,40,1,-12 to +12 semitones,Amount of control of Pitch by Pressure,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,KXFADE,41,1,"0 represents OFF, 1 represents ON",Keygroup crossfade enable,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,GROUPS,42,1,1 to 99 (Read-only),Number of keygroups. To change the number of keygroups in a,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,TPNUM,43,1,0 to 127,Temporary program number (internal use),D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,TEMPER,44,12,-50 to +50 cents,"Key temperament C, C#, D, D# etc.",D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,ECHOUT,56,1,0,Not used,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,MW_PAN,57,1,0,Not used,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,COHERE,58,1,1,Not used,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,DESYNC,59,1,"0 represents OFF, 1 represents ON",Enable de-synchronisation of LFO1 across notes,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,PLAW,60,1,0,Not used,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,VASSOQ,61,1,"0 represents OLDEST, 1 represents QUIETEST",Criterion by which voices are stolen,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,SPLOUD,62,1,0 to 99,Reduction in loudness due to soft pedal,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,SPATT,63,1,0 to 99,Stretch of attack due to soft pedal,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,SPFILT,64,1,0 to 99,Reduction of filter frequency due to soft pedal,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,PTUNO,65,2,-50.00 to +50.00 (fraction is binary),Tuning offset of program,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,K_LRAT,67,1,0,Not used,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,K_LDEP,68,1,0,Not used,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,K_LDEL,69,1,0,Not used,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,VOSCL,70,1,0 to 99,Level sent to Individual outputs/effects,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,VSSCL,71,1,0,Not used,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,LEGATO,72,1,"0 represents OFF, 1 represents ON",Mono legato mode enable,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,B_PTCHD,73,1,0 to 12 semitones,Range of decrease of Pitch by bendwheel,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,B_MODE,74,1,"0 represents NORMAL mode, 1 represents HELD mode",Bending of held notes,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,TRANSPOSE,75,1,-50 to +50 semitones,Shift pitch of incoming MIDI,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,MODSPAN1,76,1,"See ""Values used to represent Modulation Sources"" above",First source of assignable modulation of pan position,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,MODSPAN2,77,1,"See ""Values used to represent Modulation Sources"" above",Second source of assignable modulation of pan,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,MODSPAN3,78,1,"See ""Values used to represent Modulation Sources"" above",Third source of assignable modulation of pan,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,MODSAMP1,79,1,"See ""Values used to represent Modulation Sources"" above",First source of assignable modulation of loudness,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,MODSAMP2,80,1,"See ""Values used to represent Modulation Sources"" above",Second source of assignable modulation of loudness,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,MODSLFOT,81,1,"See ""Values used to represent Modulation Sources"" above",Source of assignable modulation of LFO1 speed,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,MODSLFOL,82,1,"See ""Values used to represent Modulation Sources"" above",Source of assignable modulation of LFO1 depth,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,MODSLFOD,83,1,"See ""Values used to represent Modulation Sources"" above",Source of assignable modulation of LFO1 delay,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,MODSFILT1,84,1,"See ""Values used to represent Modulation Sources"" above",First source of assignable modulation of filter frequency,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,MODSFILT2,85,1,"See ""Values used to represent Modulation Sources"" above",Second source of assignable modulation of filter frequency,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,MODSFILT3,86,1,"See ""Values used to represent Modulation Sources"" above",Third source of assignable modulation of filter frequency,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,MODSPITCH,87,1,"See ""Values used to represent Modulation Sources"" above",Source of assignable modulation of pitch,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,MODSAMP3,88,1,"See ""Values used to represent Modulation Sources"" above",Third source of assignable modulation of loudness,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,MODVPAN1,89,1,-50 to +50,Amount of control of pan by assignable source 1,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,MODVPAN2,90,1,-50 to +50,Amount of control of pan by assignable source 2,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,MODVPAN3,91,1,-50 to +50,Amount of control of pan by assignable source 3,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,MODVAMP1,92,1,-50 to +50,Amount of control of loudness by assignable source 1,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,MODVAMP2,93,1,-50 to +50,Amount of control of loudness by assignable source 2,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,MODVLFOR,94,1,-50 to +50,Amount of control of LFO1 speed,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,MODVLVOL,95,1,-50 to +50,Amount of control of LFO1 depth,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,MODVLFOD,96,1,-50 to +50,Amount of control of LFO1 delay,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,LFO1WAVE,97,1,"0 represents Triangle, 1 represents Sawtooth, 2 represents Square",LFO1 waveform,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,LFO2WAVE,98,1,"0 represents Triangle, 1 represents Sawtooth, 2 represents Square",LFO2 waveform,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,MODSLFLT2_1,99,1,"See ""Values used to represent Modulation sources"" above",First source of assignable modulation of filter 2 frequency (only,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,MODSLFLT2_2,100,1,"See ""Values used to represent Modulation sources"" above",Second source of assignable modulation of filter 2 frequency (only,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,MODSLFLT2_3,101,1,"See ""Values used to represent Modulation sources"" above",Third source of assignable modulation of filter 2 frequency (only,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,lfo2trig,102,1,,Retrigger mode for LFO2,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,Reserved,103,7,,Not used,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,PORTIME,110,1,,PORTAMENTO TIME,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,PORTYPE,111,1,,PORTAMENTO TYPE,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,PORTEN,112,1,,PORTAMENTO ON/OFF,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,PFXCHAN,113,1,0 to 4,Effects Bus Select,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+program,PFXSLEV,114,1,0 to 99,Not used,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,KGIDENT,0,1,2,Block identifier (internal use),D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,NXTKG@,1,2,Block address,Next keygroup block address (internal use),D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,LONOTE,3,1,21 to 127 represents A1 to G8,Lower limit of keyrange,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,HINOTE,4,1,21 to 127 represents A1 to G8,Upper limit of keyrange,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,KGTUNO,5,2,-50.00 to +50.00 (fraction is binary),Keygroup tuning offset,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,FILFRQ,7,1,0 to 99,Basic filter frequency,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,K_FREQ,8,1,0 to 12 semitones,Key follow of filter frequency,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,V_FREQ,9,1,0,Not used,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,P_FREQ,10,1,0,Not used,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,E_FREQ,11,1,0,Not used,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,ATTAK1,12,1,0 to 99,Attack rate of envelope 1,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,DECAY1,13,1,0 to 99,Decay rate of envelope 1,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,SUSTN1,14,1,0 to 99,Sustain level of envelope 1,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,RELSE1,15,1,0 to 99,Release rate of envelope 1,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,V_ATT1,16,1,-50 to +50,Note-on velocity dependence of envelope 1 attack rate,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,V_REL1,17,1,-50 to +50,Note-on velocity dependence of envelope 1 release rate,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,O_REL1,18,1,-50 to +50,Note-off velocity dependence of envelope 1 release rate,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,K_DAR1,19,1,-50 to +50,Dependence of envelope 2 decay and release rates on key,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,ATTAK2 or ENV2R1,20,1,0 to 99,Attack rate of envelope 2,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,DECAY2 or ENV2R3,21,1,0 to 99,Decay rate of envelope 2,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,SUSTN2 or ENV2L3,22,1,0 to 99,Sustain level of envelope 2,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,RELSE2 or ENV2R4,23,1,0 to 99,Release rate of envelope 2,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,V_ATT2,24,1,-50 to 50,Dependence of envelope 2 attack on note-on velocity,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,V_REL2,25,1,-50 to 50,Dependence of envelope 2 release on note-on velocity,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,O_REL2,26,1,-50 to 50,Dependence of envelope 2 release on note-off velocity,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,K_DAR2,27,1,-50 to 50,Dependence of envelope 2 decay and release rates on key,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,V_ENV2,28,1,-50 to 50,Scaling of envelope 2 by note-on velocity,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,E_PTCH,29,1,0,Not used,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,VXFADE,30,1,"0 represents OFF, 1 represents ON",Velocity zone crossfade,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,VZONES,31,1,0,Not used,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,LKXF,32,1,0 to 255,Calculated left keygroup crossfade factor (internal),D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,RKXF,33,1,0 to 255,Calculated right keygroup crossfade factor (internal),D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,SNAME1,34,12,String of characters,Sample name used in velocity zone 1,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,LOVEL1,46,1,0 to 127,Lower limit of velocity range,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,HIVEL1,47,1,0 to 127,Upper limit of velocity range,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,VTUNO1,48,2,-50.00 to +50.00 (fraction is binary),Velocity zone 1 tuning offset,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,VLOUD1,50,1,-50 to +50,Velocity zone 1 loudness offset,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,VFREQ1,51,1,-50 to +50,Velocity zone 1 filter frequency offset,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,VPANO1,52,1,-50 to +50,Velocity zone 1 pan offset,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,LVXF1,54,1,,Low velocity crossfade factor (internal use),D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,HVXF1,55,1,,High velocity crossfade factor (internal use),D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,SBADD1,56,2,Block address,Calculated sample header block address (internal),D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,SNAME2,58,12,String of characters,Sample name used in velocity zone 2,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,LOVEL2,70,1,0 to 127,Lower limit of velocity range 2,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,HIVEL2,71,1,0 to 127,Upper limit of velocity range 2,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,VTUNO2,72,2,-50.00 to +50.00 (fraction is binary),Velocity zone 2 tuning offset,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,VLOUD2,74,1,-50 to +50,Velocity zone 2 loudness offset,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,VFREQ2,75,1,-50 to +50,Velocity zone 2 filter frequency offset,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,VPANO2,76,1,-50 to +50,Velocity zone 2 pan offset,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,LVXF2,78,1,,Low velocity crossfade factor (internal use),D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,HVXF2,79,1,,High velocity crossfade factor (internal use),D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,SBADD2,80,2,Block address,Calculated sample header block address (internal),D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,SNAME3,82,12,String of characters,Sample name used in velocity zone 3,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,LOVEL3,94,1,0 to 127,Lower limit of velocity range 3,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,HIVEL3,95,1,0 to 127,Upper limit of velocity range 3,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,VTUNO3,96,2,-50.00 to +50.00 (fraction is binary),Velocity zone 3 tuning offset,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,VLOUD3,98,1,-50 to +50,Velocity zone 3 loudness offset,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,VFREQ3,99,1,-50 to +50,Velocity zone 3 filter frequency offset,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,VPANO3,100,1,-50 to +50,Velocity zone 3 pan offset,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,LVXF3,102,1,,Low velocity crossfade factor (internal use),D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,HVXF3,103,1,,High velocity crossfade factor (internal use),D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,SBADD3,104,2,Block address,Calculated sample header block address (internal),D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,SNAME4,106,12,String of characters,Sample name used in velocity zone 4,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,LOVEL4,118,1,0 to 127,Lower limit of velocity range 4,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,HIVEL4,119,1,0 to 127,Upper limit of velocity range 4,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,VTUNO4,120,2,-50.00 to +50.00 (fraction is binary),Velocity zone 4 tuning offset,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,VLOUD4,122,1,-50 to +50,Velocity zone 4 loudness offset,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,VFREQ4,123,1,-50 to +50,Velocity zone 4 filter frequency offset,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,VPANO4,124,1,-50 to +50,Velocity zone 4 pan offset,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,LVXF4,126,1,,Low velocity crossfade factor (internal use),D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,HVXF4,127,1,,High velocity crossfade factor (internal use),D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,SBADD4,128,2,Block address,Calculated sample header block address (internal),D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,KBEAT,130,1,-50 to +50,Fixed rate detune,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,AHOLD,131,1,"0 represents OFF, 1 represents ON",Remain in attack phase until first loop encountered,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,CP1,132,1,"0 represents TRACK, 1 represents CONST",Constant pitch flag for velocity zone 1,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,CP2,133,1,"0 represents TRACK, 1 represents CONST",Constant pitch flag for velocity zone 2,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,CP3,134,1,"0 represents TRACK, 1 represents CONST",Constant pitch flag for velocity zone 3,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,CP4,135,1,"0 represents TRACK, 1 represents CONST",Constant pitch flag for velocity zone 4,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,VZOUT1,136,1,"0 to 10 for S3000, S3200; 0 to 4 for S2800",Individual output offset for velocity zone 1,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,VZOUT2,137,1,"0 to 10 for S3000, S3200; 0 to 4 for S2800",Individual output offset for velocity zone 2,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,VZOUT3,138,1,"0 to 10 for S3000, S3200; 0 to 4 for S2800",Individual output offset for velocity zone 3,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,VZOUT4,139,1,"0 to 10 for S3000, S3200; 0 to 4 for S2800",Individual output offset for velocity zone 4,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,VSS1,140,2,-9999 to +9999 data points,Start point dependence on note-on velocity for sample in velocity,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,VSS2,142,2,-9999 to +9999 data points,Start point dependence on note-on velocity for sample in velocity,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,VSS3,144,2,-9999 to +9999 data points,Start point dependence on note-on velocity for sample in velocity,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,VSS4,146,2,-9999 to +9999 data points,Start point dependence on note-on velocity for sample in velocity,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,KV_LO,148,1,0,Not used,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,FILQ,149,1,0 to 15,Resonance of filter 1,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,L_PTCH,150,1,-50 to +50,Amount of control of pitch by LFO1,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,MODVFILT1,151,1,-50 to +50,Amount of control of filter frequency by assignable source 1,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,MODVFILT2,152,1,-50 to +50,Amount of control of filter frequency by assignable source 2,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,MODVFILT3,153,1,-50 to +50,Amount of control of filter frequency by assignable source 3,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,MODVPITCH,154,1,-50 to +50,Amount of control of pitch by assignable source,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,MODVAMP3,155,1,-50 to +50,Amount of control of loudness by assignable keygroup source,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,ENV2L1,156,1,0 to 99,Level of envelope 2 at end attack phase (phase 1),D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,ENV2R2,157,1,0 to 99,Rate during phase 2 of envelope 2,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,ENV2L2,158,1,0 to 99,Level of envelope 2 at end of phase 1,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,ENV2L4,159,1,0 to 99,Final envelope 2 level,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,kgmute,160,1,"0ffh = off, mute groups 0 to 31",Keygroup mute group,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,PFXCHAN,161,1,0 to 4,Effects bus select,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,PFXSLEV,162,1,0 to 99,Effects send level,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,Reserved,163,5,,Not used,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,LSI2_ON,168,1,"0 = -6dB, 1 = 0dB",Route audio through second LSI,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,FLT2GAIN,169,1,"0 = -6dB, 1 = 0dB",Make-up gain of second filter,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,FLT2MODE,170,1,"0 = Low-pass, 1 = Band-pass, 2 = High-pass, 3 = EQ",Mode of second filter,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,FLT2Q,171,1,0 to 31,Resonance of second filter,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,TONEFREQ,172,1,0 to 99,Center frequency of tone section,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,TONESLOP,173,1,-50 to +50,Slope of tone section,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,MODVFLT2_1,174,1,-50 to +50,Amount of control of second filter frequency by source 1,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,MODVFLT2_2,175,1,-50 to +50,Amount of control of second filter frequency by source 2,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,MODVFLT2_3,176,1,-50 to +50,Amount of control of second filter frequency by source 3,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,FIL2FR,177,1,0 to 99,Basic second filter frequency,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,K_FRQ2,178,1,-24 to +24 semitones,Second filter key follow,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,ENV3R1 or ATTAK3,179,1,0 to 99,Attack rate of envelope 3,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,ENV3L1,180,1,0 to 99,Final level of attack phase (phase 1) of envelope 3,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,ENV3R2,181,1,0 to 99,Rate of phase 2 of envelope 3,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,ENV3L2,182,1,0 to 99,Final level of phase 2 of envelope 3,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,ENV3R3 or DECAY3,183,1,0 to 99,Rate of phase 3 of envelope 3,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,ENV3L3 or SUSTN3,184,1,0 to 99,Final level of phase 3 of envelope 3,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,ENV3R4 or RELSE3,185,1,0 to 99,Rate of release phase (phase 4) of envelope 3,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,ENV3L4,186,1,0 to 99,Final target level of envelope 3,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,V_ATT3,187,1,-50 to +50,Dependence of envelope 3 attack rate on note-on velocity,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,V_REL3,188,1,-50 to +50,Dependence of envelope 3 release rate on note-on velocity,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,O_REL3,189,1,-50 to +50,Dependence of envelope 3 release rate on note-off velocity,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,K_DAR3,190,1,-50 to +50,Dependence of envelope 3 release and decay rate on key,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,V_ENV3,191,1,-50 to +50,Scaling of envelope 3 by note-on velocity,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,KFXCHAN,161,1,0 to 5,Keygroup override Effects Bus select,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+keygroup,KFXSLEV,162,1,0 to 99,Keygroup override Effects Send level,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+sample,SHIDENT,0,1,3 (Fixed),Block identifier,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+sample,SBANDW,1,1,"0 represents 10kHz, 1 represents 20kHz",Sample bandwidth,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+sample,SPITCH,2,1,21 to 127 represents A1 to G8,Original pitch,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+sample,SHNAME,3,12,String of characters,Sample name,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+sample,SSRVLD,15,1,"0 indicates rate is invalid, 128 indicates rate is valid",Sample rate validity,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+sample,SLOOPS,16,1,,Number of loops,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+sample,SALOOP,17,1,,First active loop (internal use),D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+sample,SHLOOP,18,1,,Highest loop (internal use),D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+sample,STUNO,20,2,,Sample tuning offset cent:semi,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+sample,SLOCAT,22,4,Absolute location in Wave memory,Absolute start address in memory of sample,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+sample,SLNGTH,26,4,Number of data points from start of sample,Length of sample,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+sample,SSTART,30,4,Number of data points from start of sample,Offset from start of sample from which playback commences,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+sample,SMPEND,34,4,Number of data points from start of sample,Offset from start of sample from which playback ceases,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+sample,LOOPAT1,38,4,Number of data points from start of sample,Position in sample of first loop point,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+sample,LLNGTH1,42,6,,First loop length,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+sample,LOOPAT2,50,4,Number of data points from start of sample,Position in sample of second loop point,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+sample,LLNGTH2,54,6,,Second loop length,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+sample,LOOPAT3,62,4,Number of data points from start of sample,Position in sample of third loop point,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+sample,LLNGTH3,66,6,,Third loop length,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+sample,LOOPAT4,74,4,Number of data points from start of sample,Position in sample of fourth loop point,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+sample,LLNGTH4,78,6,,Fourth loop length,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+sample,SLXY1,86,4,,Relative loop factors for loop 1,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+sample,SLXY2,98,4,,Relative loop factors for loop 2,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+sample,SLXY3,110,4,,Relative loop factors for loop 3,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+sample,SLXY4,122,4,,Relative loop factors for loop 4,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+sample,SSPARE,134,1,,Used internally,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+sample,SWCOMM,135,1,,Not used,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+sample,SSPAIR,136,2,Block address,Address of stereo partner (internal use),D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+sample,SSRATE,138,2,,Sample rate,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.
+sample,SHLTO,140,1,-50 to +50,Tuning offset of hold loop,D02,Documentary S3000-family layout; S2000 firmware applicability requires field-specific validation. Not a write allowlist.

@@ -1,0 +1,215 @@
+[
+  {
+    "archive": "cap_import1",
+    "records": 370,
+    "min_seq": 1,
+    "max_seq": 370,
+    "duplicate_seqs": [],
+    "issues": [],
+    "upload_records": [
+      {
+        "seq": 354,
+        "tick_ms": 39693889,
+        "cdb": "0c0000018800",
+        "bytes": 392,
+        "prefix": "f047000b4801000300"
+      }
+    ]
+  },
+  {
+    "archive": "MESA_CAPTURE",
+    "records": 224,
+    "min_seq": 1,
+    "max_seq": 224,
+    "duplicate_seqs": [],
+    "issues": [],
+    "upload_records": [
+      {
+        "seq": 70,
+        "tick_ms": 52056239,
+        "cdb": "0c0000018800",
+        "bytes": 392,
+        "prefix": "f04700074800010100"
+      },
+      {
+        "seq": 75,
+        "tick_ms": 52056329,
+        "cdb": "0c0000018900",
+        "bytes": 393,
+        "prefix": "f0470009487f010002"
+      },
+      {
+        "seq": 150,
+        "tick_ms": 52150999,
+        "cdb": "0c0000018800",
+        "bytes": 392,
+        "prefix": "f047000b4801000300"
+      },
+      {
+        "seq": 153,
+        "tick_ms": 52151044,
+        "cdb": "0c0000020080",
+        "bytes": 512,
+        "prefix": "0000fb00f401ec02e1"
+      }
+    ]
+  },
+  {
+    "archive": "cap_kg",
+    "records": 76,
+    "min_seq": 1,
+    "max_seq": 76,
+    "duplicate_seqs": [],
+    "issues": [],
+    "upload_records": [
+      {
+        "seq": 58,
+        "tick_ms": 48716159,
+        "cdb": "0c0000018800",
+        "bytes": 392,
+        "prefix": "f04700074800010100"
+      },
+      {
+        "seq": 63,
+        "tick_ms": 48716214,
+        "cdb": "0c0000018900",
+        "bytes": 393,
+        "prefix": "f0470009487f010002"
+      }
+    ]
+  },
+  {
+    "archive": "cap_program",
+    "records": 71,
+    "min_seq": 1,
+    "max_seq": 71,
+    "duplicate_seqs": [],
+    "issues": [],
+    "upload_records": [
+      {
+        "seq": 58,
+        "tick_ms": 47391439,
+        "cdb": "0c0000018800",
+        "bytes": 392,
+        "prefix": "f04700074800010100"
+      },
+      {
+        "seq": 63,
+        "tick_ms": 47391587,
+        "cdb": "0c0000018900",
+        "bytes": 393,
+        "prefix": "f0470009487f010002"
+      }
+    ]
+  },
+  {
+    "archive": "cap_final",
+    "records": 136,
+    "min_seq": 1,
+    "max_seq": 136,
+    "duplicate_seqs": [],
+    "issues": [],
+    "upload_records": [
+      {
+        "seq": 58,
+        "tick_ms": 49080924,
+        "cdb": "0c0000018800",
+        "bytes": 392,
+        "prefix": "f04700074800010100"
+      },
+      {
+        "seq": 63,
+        "tick_ms": 49080979,
+        "cdb": "0c0000018900",
+        "bytes": 393,
+        "prefix": "f0470009487f010002"
+      }
+    ]
+  },
+  {
+    "archive": "cap_range",
+    "records": 117,
+    "min_seq": 1,
+    "max_seq": 117,
+    "duplicate_seqs": [],
+    "issues": [],
+    "upload_records": [
+      {
+        "seq": 67,
+        "tick_ms": 51439559,
+        "cdb": "0c0000018800",
+        "bytes": 392,
+        "prefix": "f04700074800010100"
+      },
+      {
+        "seq": 70,
+        "tick_ms": 51439599,
+        "cdb": "0c0000018900",
+        "bytes": 393,
+        "prefix": "f0470009487f010002"
+      }
+    ]
+  },
+  {
+    "archive": "cap_postpcm",
+    "records": 137,
+    "min_seq": 1,
+    "max_seq": 137,
+    "duplicate_seqs": [],
+    "issues": [],
+    "upload_records": [
+      {
+        "seq": 63,
+        "tick_ms": 45574464,
+        "cdb": "0c0000018800",
+        "bytes": 392,
+        "prefix": "f047000b4801000300"
+      },
+      {
+        "seq": 66,
+        "tick_ms": 45574479,
+        "cdb": "0c0000020080",
+        "bytes": 512,
+        "prefix": "0000fb00f401ec02e1"
+      },
+      {
+        "seq": 119,
+        "tick_ms": 46555039,
+        "cdb": "0c0000018800",
+        "bytes": 392,
+        "prefix": "f04700074800010100"
+      },
+      {
+        "seq": 129,
+        "tick_ms": 46627081,
+        "cdb": "0c0000018800",
+        "bytes": 392,
+        "prefix": "f04700074800010100"
+      }
+    ]
+  },
+  {
+    "archive": "cap_import2",
+    "records": 77,
+    "min_seq": 1,
+    "max_seq": 77,
+    "duplicate_seqs": [],
+    "issues": [],
+    "upload_records": [
+      {
+        "seq": 63,
+        "tick_ms": 44310669,
+        "cdb": "0c0000018800",
+        "bytes": 392,
+        "prefix": "f047000b4801000300"
+      },
+      {
+        "seq": 66,
+        "tick_ms": 44310686,
+        "cdb": "0c0000020080",
+        "bytes": 512,
+        "prefix": "0000fb00f401ec02e1"
+      }
+    ]
+  }
+]
