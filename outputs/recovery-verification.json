@@ -1,0 +1,12 @@
+{
+  "source_disk_hash_unchanged": true,
+  "source_disk_stat_unchanged": true,
+  "recovered_files_hash_verified": 899,
+  "successful_transcript_orders_checked": 4,
+  "captured_golden_packets_checked": 9,
+  "sample_metadata_fixture_round_trip_exact": true,
+  "captured_keygroup_zones_blank": true,
+  "reviewed_bridge_files_hash_unchanged": true,
+  "document_links_valid": true,
+  "physical_validation": false
+}

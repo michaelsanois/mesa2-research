@@ -1,0 +1,10 @@
+work/
+__pycache__/
+*.pyc
+.DS_Store
+*.qcow2
+*.iso
+*.dll
+*.exe
+*.cab
+*.msi
