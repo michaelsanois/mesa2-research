@@ -1,4 +1,0 @@
-LIBRARY WNASPI32
-EXPORTS
-    GetASPI32SupportInfo @1
-    SendASPI32Command @2
